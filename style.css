@@ -14,13 +14,15 @@ body{
     align-items: center;
     height: 100vh;
     background-color: #8ae0d5;
+    background-color: red;
     font-size: 1.6rem;
 }
 main{
     padding: 5rem;
     border-radius: 15px;
     background-color:white;
-    min-width: 38.8rem;
+    width: 40.5rem;
+    max-width: 95%;
     
 }
 
@@ -44,10 +46,14 @@ main{
 
 }
 .title,.title-finish{
-    font-size: 3rem;
+    display: flex;
+    text-align: center;
+    font-size: 2.8rem;
     margin-bottom: 1.5rem;
 }
 .description,.description-finish{
+    display: flex;
+    text-align: center;
     font-size: 1.8rem;
     margin-bottom: 3rem;
 }
