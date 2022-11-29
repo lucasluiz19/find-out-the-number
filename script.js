@@ -1,7 +1,6 @@
 let btnExect=document.querySelector('#btnExect')
 let btnReset=document.querySelector("#btnReset")
 let formValue=document.querySelector('#form-value')
-let vezesExect=""
 let randonNumber=Math.floor(Math.random() *10)
 let box1=document.querySelector('.boxOne')
 let box2=document.querySelector('.box-2')
@@ -17,6 +16,10 @@ function exectVerific(name) {
         alert('entre com um número')
         
         vezesExect=''
+    }else if (formValue.value <0 || formValue.value > 9){
+        alert('favor entrar com um número entre 0 e 9')
+        vezesExect=''
+        formValue.value=''
     }
     else if (Number(formValue.value)=== randonNumber) {
         box1.classList.toggle('hide')
@@ -42,7 +45,7 @@ function resetInfo(name) {
     vezesExect=''
     formValue.value=''
     randonNumber=Math.floor(Math.random() *10)
-    description.innerText='Entre um numero de 0 a 9'
+    description.innerText='Escolha um numero de 0 a 9'
     
 }
 
