@@ -42,7 +42,7 @@ function resetInfo(name) {
     vezesExect=''
     formValue.value=''
     randonNumber=Math.floor(Math.random() *10)
-    
+    description.innerText='Entre um numero de 0 a 9'
     
 }
 
